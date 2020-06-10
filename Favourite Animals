@@ -1,0 +1,8 @@
+var favAnimals = ["Otter", "Dolphin", "Whale", "Leopards", "Jaguars"];
+var animalNum = 0;
+
+while (animalNum < favAnimals.length) {
+    fill(255, 0, 0);
+    text(favAnimals[animalNum], 10, 30 + animalNum*40);
+    animalNum++;
+}
