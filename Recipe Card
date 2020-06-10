@@ -1,0 +1,15 @@
+var recipeTitle = "Cinnamon Baked French Toast";
+var recipeServings = 12;
+var recipeIngredients = ["Butter", "Eggs", "Whole Milk", "Heavy whipping cream"];
+
+var recipe = {
+    title: "Cinnamon Baked French Toast",
+    Servings: 12,
+    Ingredients: ["Butter", "Eggs", "Whole Milk", "Heavy whipping cream"],
+};
+
+fill(26, 26, 26);
+textSize(20);
+text(recipe.title, 10, 23);
+text("Serves: " + recipe.Servings, 10, 55);
+text("Ingredients: " + recipe.Ingredients, 10, 85);
