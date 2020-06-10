@@ -1,0 +1,18 @@
+var paintBrush = {
+    x: 166,
+    y: 233,
+    img: getImage("avatars/aqualine-seed")
+};
+
+var paintCanvas = function() {
+    imageMode(CENTER);
+    image(paintBrush.img, paintBrush.x, paintBrush.y);
+};
+
+mouseMoved = function() {
+    paintBrush.x = mouseX;
+    paintBrush.y = mouseY;
+    paintCanvas();
+};
+
+paintCanvas();
